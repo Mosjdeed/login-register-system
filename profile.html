@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <!-- Profile Container -->
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+        <!-- Profile Icon -->
+        <div class="flex justify-center mb-4">
+            <div class="bg-blue-500 w-24 h-24 rounded-full flex items-center justify-center">
+                <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+            </div>
+        </div>
+        
+        <!-- Welcome Message -->
+        <h2 class="text-2xl font-bold text-center mb-6">Welcome, <span id="userName">User</span>!</h2>
+        
+        <!-- User Info -->
+        <div class="space-y-4 mb-6">
+            <div class="border-b pb-3">
+                <p class="text-sm text-gray-600">Name</p>
+                <p id="displayName" class="font-medium text-gray-800">Loading...</p>
+            </div>
+            
+            <div class="border-b pb-3">
+                <p class="text-sm text-gray-600">Email</p>
+                <p id="displayEmail" class="font-medium text-gray-800">Loading...</p>
+            </div>
+        </div>
+        
+        <!-- Logout Button -->
+        <button 
+            id="logoutBtn" 
+            class="w-full bg-red-500 text-white py-2 rounded-md hover:bg-red-600 transition duration-300"
+        >
+            Logout
+        </button>
+    </div>
+    
+    <script src="app.js"></script>
+
+</body>
+</html>
